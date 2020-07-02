@@ -3,15 +3,15 @@ def join_nested_strings(src)
   # Combine all Strings present in the AoA into a single value and return it
   string_array = []
   row_index = 0
-    while row_index < src.count do
-      element_index = 0
-      while element_index < src[row_index].count do
-        if src[row_index][element_index].class == "String"
+  while row_index < src.count do
+    element_index = 0
+    while element_index < src[row_index].count do
+      if src[row_index][element_index].class == "String"
           string_array.push(src[row_index][element_index])
         element_index += 1
-        end
       end
-      row_index += 1  
     end
+      row_index += 1  
+  end
   string_array
 end
